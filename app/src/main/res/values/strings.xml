@@ -1,10 +1,21 @@
 <resources>
     <string name="app_name">Activity</string>
-    <string-array name="android_dropdown_arrays">
+    <string-array name="jurusan_array">
         <item>Teknik Informatika</item>
-        <item>Teknik Informatika</item>
-        <item>Teknik Informatika</item>
-        <item>Teknik Informatika</item>
-        <item>Teknik Informatika</item>
+        <item>Teknik Kimia</item>
+        <item>Teknik Sipil</item>
+        <item>Teknik Elektro</item>
+        <item>Teknik Mesin</item>
+        <item>GMF</item>
+        <item>Administrasi Niaga</item>
     </string-array>
+
+    <!--  Hint Input  -->
+    <string name="txtnim">Masukkan NIM Anda</string>
+    <string name="txtnama">Masukkan Nama Anda</string>
+    <string name="txtTanggal">Pilih Tanggal Lahir</string>
+    <string name="rbMale">Laki Laki</string>
+    <string name="rbFemale">Perempuan</string>
+    <string name="desc_image">LOGO</string>
+    <string name="txt_desc">Data sudah Tersimpan</string>
 </resources>

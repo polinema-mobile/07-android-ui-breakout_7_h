@@ -11,4 +11,24 @@ public class Mahasiswa {
         this.jurusan = jurusan;
         this.tglLahir = tglLahir;
     }
+
+    public long getNim() {
+        return nim;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getJurusan() {
+        return jurusan;
+    }
+
+    public String getTglLahir() {
+        return tglLahir;
+    }
 }

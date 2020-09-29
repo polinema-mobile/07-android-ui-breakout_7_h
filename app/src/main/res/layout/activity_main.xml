@@ -65,7 +65,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/edtNIM" />
 
             <RadioGroup
-                android:id="@+id/radbtnGender"
+                android:id="@+id/radgrGender"
                 android:layout_width="376dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="16dp"
@@ -103,7 +103,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radbtnGender" />
+                app:layout_constraintTop_toBottomOf="@+id/radgrGender" />
 
             <Button
                 android:id="@+id/btnSubmit"

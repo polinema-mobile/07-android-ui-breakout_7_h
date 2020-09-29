@@ -10,7 +10,6 @@
         android:id="@+id/constraintLayout"
         android:layout_width="412dp"
         android:layout_height="299dp"
-        android:background="@drawable/bc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,34 +18,14 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="140dp"
-            android:layout_height="157dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginBottom="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/datanama"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/icons" />
 
-        <TextView
-            android:id="@+id/datanama"
-            android:layout_width="382dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center_horizontal"
-            android:text="Nama "
-            android:textAlignment="center"
-            android:textColor="#ffffff"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -63,149 +42,113 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
+            android:id="@+id/datanama"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:text="Nama "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <TextView
             android:id="@+id/Nim"
             android:layout_width="51dp"
             android:layout_height="26dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginEnd="249dp"
-            android:layout_marginRight="249dp"
-            android:layout_marginBottom="5dp"
             android:fontFamily="sans-serif-light"
             android:text="NIM"
             android:textColor="#000000"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/datanim"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteY="46dp" />
 
         <TextView
             android:id="@+id/datanim"
             android:layout_width="254dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_height="0dp"
             android:fontFamily="sans-serif-light"
             android:text="datanim"
             android:textColor="#000000"
             android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Nim" />
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="82dp" />
 
         <TextView
             android:id="@+id/datatgl"
             android:layout_width="254dp"
             android:layout_height="19dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="35dp"
-            android:layout_marginRight="35dp"
             android:fontFamily="sans-serif-light"
             android:text="dataTgl"
             android:textColor="#000000"
             android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TanggalLahir" />
+            tools:layout_editor_absoluteY="164dp" />
 
         <TextView
             android:id="@+id/datakelamin"
             android:layout_width="254dp"
             android:layout_height="19dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="35dp"
-            android:layout_marginRight="35dp"
             android:fontFamily="sans-serif-light"
             android:text="dataKelamin"
             android:textColor="#000000"
             android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/kelamin" />
+            tools:layout_editor_absoluteY="242dp" />
 
         <TextView
             android:id="@+id/datajurusan"
             android:layout_width="254dp"
             android:layout_height="19dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="35dp"
-            android:layout_marginRight="35dp"
             android:fontFamily="sans-serif-light"
             android:text="datajurusan"
             android:textColor="#000000"
             android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/jurusan" />
+            tools:layout_editor_absoluteY="318dp" />
 
         <TextView
             android:id="@+id/TanggalLahir"
             android:layout_width="119dp"
             android:layout_height="23dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="204dp"
-            android:layout_marginRight="204dp"
             android:fontFamily="sans-serif-light"
             android:text="Tanggal Lahir"
             android:textColor="#000000"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/datanim" />
+            tools:layout_editor_absoluteY="134dp" />
 
         <TextView
             android:id="@+id/kelamin"
             android:layout_width="119dp"
             android:layout_height="23dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="204dp"
-            android:layout_marginRight="204dp"
             android:fontFamily="sans-serif-light"
             android:text="Jenis Kelamin"
             android:textColor="#000000"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/datatgl" />
+            tools:layout_editor_absoluteY="212dp" />
 
         <TextView
             android:id="@+id/jurusan"
             android:layout_width="119dp"
-            android:layout_height="23dp"
+            android:layout_height="0dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="204dp"
-            android:layout_marginRight="204dp"
             android:fontFamily="sans-serif-light"
             android:text="Jurusan"
             android:textColor="#000000"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/datakelamin" />
+            tools:layout_editor_absoluteY="287dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

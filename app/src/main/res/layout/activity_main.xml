@@ -27,13 +27,13 @@
                 android:layout_marginRight="10dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Nama Mahasiswa"
+                android:hint="Nama Mahasiswa"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/edtNim"
+                android:id="@+id/edtNIM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -43,13 +43,13 @@
                 android:layout_marginRight="10dp"
                 android:ems="10"
                 android:inputType="numberSigned"
-                android:text="Nomor Induk Mahasiswa"
+                android:hint="NIM"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edtNama" />
 
             <EditText
-                android:id="@+id/edtTanggalLahir"
+                android:id="@+id/edtTglLahir"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -58,14 +58,14 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
                 android:ems="10"
-                android:inputType="date"
-                android:text="Tanggal Lahir"
+                android:clickable="true"
+                android:hint="Tanggal Lahir"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtNim" />
+                app:layout_constraintTop_toBottomOf="@+id/edtNIM" />
 
             <RadioGroup
-                android:id="@+id/radioGroup"
+                android:id="@+id/radbtnGender"
                 android:layout_width="376dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="16dp"
@@ -74,23 +74,23 @@
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edtTanggalLahir">
+                app:layout_constraintTop_toBottomOf="@+id/edtTglLahir">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radbtnLaki"
                     android:layout_width="187dp"
                     android:layout_height="wrap_content"
                     android:text="Laki Laki" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/radbtnPerempuan"
                     android:layout_width="187dp"
                     android:layout_height="wrap_content"
                     android:text="Perempuan" />
             </RadioGroup>
 
             <Spinner
-                android:id="@+id/spinnerJurusan"
+                android:id="@+id/spnrJurusan"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="10dp"
@@ -103,7 +103,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+                app:layout_constraintTop_toBottomOf="@+id/radbtnGender" />
 
             <Button
                 android:id="@+id/btnSubmit"
@@ -118,7 +118,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.428"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinnerJurusan" />
+                app:layout_constraintTop_toBottomOf="@+id/spnrJurusan" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataPribadi">
+
+    <ProgressBar
+        android:id="@+id/pb1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/svFirstForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pb1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Nama -->
+            <TextView
+                android:id="@+id/lblName"
+                android:text="@string/lblName"
+                style="@style/labelText"/>
+
+            <EditText
+                android:id="@+id/inName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:inputType="textPersonName"
+                android:autofillHints="Muhammad Rizy Budianto" />
+
+            <!-- Fakultas -->
+            <TextView
+                android:id="@+id/lblfaculty"
+                android:text="@string/lblFaculty"
+                style="@style/labelText"/>
+
+            <Spinner
+                android:id="@+id/inFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/faculty"/>
+
+            <!-- Program Studi -->
+            <TextView
+                android:id="@+id/lblProgram"
+                android:text="@string/lblProgram"
+                style="@style/labelText" />
+
+            <Spinner
+                android:id="@+id/inProgram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/program" />
+
+            <!-- Status -->
+            <TextView
+                android:id="@+id/lblStatus"
+                android:text="@string/lblStatus"
+                style="@style/labelText" />
+
+            <Spinner
+                android:id="@+id/inStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/status"/>
+
+            <!-- Password -->
+            <TextView
+                android:id="@+id/lblPass"
+                android:text="@string/lblPass"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+            <!-- Password Confirm -->
+            <TextView
+                android:id="@+id/lblPassConf"
+                android:text="@string/lblPassConf"
+                style="@style/labelText"/>
+
+            <EditText
+                android:id="@+id/inPassConf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+            <!-- Alasan -->
+            <TextView
+                android:id="@+id/lblReason"
+                android:text="@string/lblReason"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <!-- NIK -->
+            <TextView
+                android:id="@+id/lblNIK"
+                android:text="@string/lblNIK"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inNIK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <!-- Prestasi Akademik -->
+            <TextView
+                android:id="@+id/lblAchievement"
+                android:text="@string/lblAchievement"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inAchievement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <!-- Tempat Lahir -->
+            <TextView
+                android:id="@+id/lblBirthPlace"
+                android:text="@string/lblBirthPlace"
+                style="@style/labelText" />
+
+            <AutoCompleteTextView
+                android:id="@+id/acBirthPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Tanggal Lahir -->
+            <TextView
+                android:id="@+id/lblBirthDate"
+                android:text="@string/lblBirthDate"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date" />
+
+            <!-- Jenis Kelamin -->
+            <TextView
+                android:id="@+id/lblGender"
+                android:text="@string/lblGender"
+                style="@style/labelText"/>
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbMale" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbFemale" />
+
+            </RadioGroup>
+
+            <!-- Kewarganegaraan -->
+            <TextView
+                android:id="@+id/lblCitizenship"
+                android:text="@string/lblCitizenship"
+                style="@style/labelText"/>
+
+            <RadioGroup
+                android:id="@+id/rgCitizenship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbIndonesia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbIndonesia" />
+
+                <RadioButton
+                    android:id="@+id/rbOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rbOther" />
+
+            </RadioGroup>
+
+            <!-- Agama -->
+            <TextView
+                android:id="@+id/lblReligion"
+                android:text="@string/lblReligion"
+                style="@style/labelText" />
+
+            <Spinner
+                android:id="@+id/inReligion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/religion" />
+
+            <!-- Alamat -->
+            <TextView
+                android:id="@+id/lblAddress"
+                android:text="@string/lblAddress"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" />
+
+            <!-- RT -->
+            <TextView
+                android:id="@+id/lblRT"
+                android:text="@string/rt"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inRT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <!-- RT -->
+            <TextView
+                android:id="@+id/lblRW"
+                android:text="@string/rw"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inRW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <!-- Kode Pos -->
+            <TextView
+                android:id="@+id/lblPostCode"
+                android:text="@string/kode_pos"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inPostCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <!-- Provinsi -->
+            <TextView
+                android:id="@+id/lblProvince"
+                android:text="@string/lblProvince"
+                style="@style/labelText" />
+
+            <Spinner
+                android:id="@+id/inProvince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/province" />
+
+            <!-- Town -->
+            <TextView
+                android:id="@+id/lblTown"
+                android:text="@string/lblTown"
+                style="@style/labelText" />
+
+            <Spinner
+                android:id="@+id/inToown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/town" />
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/lblPhoneNumber"
+                android:text="@string/lblHP"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/lblEmail"
+                android:text="@string/email"
+                style="@style/labelText" />
+
+            <EditText
+                android:id="@+id/inEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+            <!-- Button -->
+            <Button
+                android:id="@+id/btnNextOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnNext" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

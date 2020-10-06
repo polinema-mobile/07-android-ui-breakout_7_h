@@ -1,10 +1,16 @@
-#  APLIKASI INPUT DATA MAHASISWA
+## PMB YARSI Mobile
 
-## Team
-Ardyansyah Vira B   1841720180  
-Unero Bhagaskara Ramadhan M     1841720173  
-
-## Feature
-- Fill Form
-- Validation Form
-- Parcelable
+### About
+This project is created to Study, with case Converting PMB Yarsi Student Registration Form.  
+From Webpage to Android Layout without using WebView, and use Parcelable / Intent Data Transfer.
+  
+### Feature
+- Splash Screen
+- Form 1, 2, 3
+  
+### Screenshot
+![Splash](assets/splash.png) ![Form 1](assets/form1.png)
+  
+### Contributor
+- Unero (Maintainer)
+- Ardyansyah (Maintainer)

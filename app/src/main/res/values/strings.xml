@@ -1,21 +1,69 @@
 <resources>
-    <string name="app_name">Activity</string>
-    <string-array name="jurusan_array">
+    <!-- Splash Screen Text -->
+    <string name="app_name">PMB YARSI Mobile</string>
+    <string name="text_desc">PDPT MAHASISWA BARU</string>
+
+    <!-- Data Pribadi -->
+    <string name="lblName">Nama Anda</string>
+    <string name="lblFaculty">Fakultas Pilihan</string>
+    <string name="lblProgram">Program Studi</string>
+    <string name="lblStatus">Status Pendaftaran</string>
+    <string name="lblPass">Password</string>
+    <string name="lblPassConf">Ketik Ulang Password</string>
+    <string name="lblReason">Alansan Anda</string>
+    <string name="lblNIK">No. Induk Kependudukan</string>
+    <string name="lblAchievement">Prestasi Akademik</string>
+    <string name="lblBirthPlace">Tempat Lahir</string>
+    <string name="lblBirthDate">Tanggal Lahir</string>
+    <string name="lblGender">Jenis Kelamin</string>
+    <string name="rbMale">Male</string>
+    <string name="rbFemale">Perempuan</string>
+    <string name="lblCitizenship">Kewarganegaraan</string>
+    <string name="rbIndonesia">Indonesia</string>
+    <string name="rbOther">Asing</string>
+    <string name="lblReligion">Agama</string>
+    <string name="lblAddress">Alamat</string>
+    <string name="rt">RT</string>
+    <string name="rw">rw</string>
+    <string name="kode_pos">Kode Pos</string>
+    <string name="lblHP">No HP</string>
+    <string name="email">Email</string>
+    <string name="lblProvince">Provinsi</string>
+    <string name="lblTown">Kota / Kabupaten</string>
+    <string name="btnNext">Selanjutnya</string>
+    <string-array name="faculty">
+        <item>Diploma 3</item>
+        <item>Sekolah Sarjana</item>
+        <item>Sekolah Pascasarjana</item>
+    </string-array>
+    <string-array name="program">
+        <item>Manajemen Informasi</item>
         <item>Teknik Informatika</item>
-        <item>Teknik Kimia</item>
-        <item>Teknik Sipil</item>
-        <item>Teknik Elektro</item>
-        <item>Teknik Mesin</item>
-        <item>GMF</item>
-        <item>Administrasi Niaga</item>
+        <item>Teknik Elektronik</item>
+        <item>Magister Elektronika</item>
+    </string-array>
+    <string-array name="status">
+        <item>Baru</item>
+        <item>Lama</item>
+    </string-array>
+    <string-array name="town">
+        <item>Malang</item>
+        <item>Jakarta</item>
+        <item>Bali</item>
+        <item>Surabaya</item>
+        <item>Madiun</item>
+    </string-array>
+    <string-array name="religion">
+        <item>ISLAM</item>
+        <item>KRISTEN</item>
+        <item>KATHOLIK</item>
+        <item>HINDU</item>
+    </string-array>
+    <string-array name="province">
+        <item>Jawa Timur</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Barat</item>
+        <item>Sulawesi Tenggara</item>
     </string-array>
 
-    <!--  Hint Input  -->
-    <string name="txtnim">Masukkan NIM Anda</string>
-    <string name="txtnama">Masukkan Nama Anda</string>
-    <string name="txtTanggal">Pilih Tanggal Lahir</string>
-    <string name="rbMale">Laki Laki</string>
-    <string name="rbFemale">Perempuan</string>
-    <string name="desc_image">LOGO</string>
-    <string name="txt_desc">Data sudah Tersimpan</string>
 </resources>
